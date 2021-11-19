@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="magno_test" name="TWYGTracking" type="twyg_control.py" />
+    <include file="$(env HOME)/catkin_ws/src/magno-test/launch/magno_logging.launch" />
+    <node pkg="$(find basic_led_strip_ros)/nodes" name="ShuffleSunCommand" type="shuffle_sun_command.py" />
+
+</launch>

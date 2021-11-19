@@ -1,0 +1,9 @@
+<launch>
+    <node
+        pkg="rosbag"
+        name="magno_logger"
+        type="record" 
+        args="record -o magno_data.bag $(env HOME)/catkin_ws/src/magno_test/data /angle_data /strip_led_info" 
+    />
+
+</launch>
